@@ -1,0 +1,654 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+      display: block;
+}
+body {
+      line-height: 1;
+}
+ol,
+ul {
+      list-style: none;
+}
+blockquote,
+q {
+      quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+      content: "";
+      content: none;
+}
+table {
+      border-collapse: collapse;
+      border-spacing: 0;
+}
+
+html {
+      box-sizing: border-box;
+      font-family: "Open Sans", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+      box-sizing: inherit;
+}
+
+.header_for_desktop {
+      display: none;
+}
+
+body {
+      min-height: 100vh;
+      overflow-x: hidden;
+      min-height: 100vh;
+}
+
+.header_for_mobile {
+      width: 100%;
+      padding: 0 10px;
+}
+
+.heart_container {
+      color: red;
+      border-bottom: 1px solid rgba(219, 209, 209, 0.373);
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 10px;
+}
+
+.heart_container span {
+      margin-left: auto;
+      text-align: center;
+}
+
+.heart_container span:nth-of-type(1) {
+      padding-right: 6px;
+      padding-bottom: 5px;
+      font-size: 20px;
+}
+.heart_container span:nth-of-type(2) {
+      color: rgba(0, 0, 0, 0.62);
+      font-size: 10px;
+}
+
+.logo_container {
+      display: flex;
+      padding-bottom: 12px;
+}
+
+.company_logo {
+      width: 100%;
+      max-width: 150px;
+      height: 100%;
+      padding: 0 10px;
+      /* border-right: 1px solid rgba(128, 128, 128, 0.541); */
+}
+
+.logo_container h1 {
+      text-align: center;
+      align-self: center;
+      padding-left: 5px;
+      font-size: 0.8rem;
+      font-weight: 700;
+}
+
+a,
+span {
+      text-transform: uppercase;
+}
+
+.mobile-nav {
+      display: flex;
+      padding: 5px 0;
+}
+
+.mobile-nav a {
+      text-decoration: none;
+      color: black;
+}
+
+.click_call,
+.directions,
+.hamburger_menu {
+      padding: 10px 10px;
+}
+
+.click_call,
+.directions {
+      font-weight: 600;
+}
+
+.mobile-nav .click_call {
+      padding-right: 10px;
+      font-size: 14px;
+      background-color: #3e366b;
+      color: white;
+      border-radius: 2px;
+}
+
+.mobile-nav .mobile_call_logo {
+      font-size: 8px;
+      color: white;
+}
+
+.directions {
+      font-size: 12px;
+}
+
+.hamburger_menu {
+      margin-left: auto;
+}
+
+main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+}
+
+.discount_banner {
+      width: 100%;
+      background-color: #0b7c1f;
+      text-align: center;
+      padding: 12px 14px;
+      margin-bottom: 8px;
+}
+.discount_banner span {
+      color: white;
+      text-decoration: underline;
+      font-weight: 700;
+      font-size: 18px;
+}
+
+.banners_containers {
+      display: flex;
+      min-width: 100%;
+      padding: 0 10px;
+      margin-bottom: 2rem;
+}
+
+.banners {
+      text-align: center;
+      font-size: 10%;
+      text-transform: uppercase;
+      padding: 18px 16px;
+      border: 1px solid rgba(0, 0, 0, 0);
+      transform: skewX(-40deg);
+      width: 100%;
+}
+
+.banners:nth-of-type(1),
+.banners:nth-of-type(3) {
+      background-color: red;
+}
+
+.banners:nth-of-type(2) {
+      background-color: #3d5195;
+}
+
+.banners span {
+      display: inline-block;
+      transform: skew(40deg);
+      color: white;
+      font-size: 1.3vw;
+      font-weight: 600;
+}
+
+.extra_info {
+      text-align: center;
+}
+
+.extra_info h2 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: rgb(48, 46, 46);
+      padding: 0 15px 10px;
+}
+
+.extra_info p {
+      font-size: 0.8rem;
+      padding: 0 40px 15px;
+}
+
+.extra_info p span {
+      text-transform: none;
+      text-decoration: underline;
+      text-decoration-color: #633231;
+      color: #633231;
+      font-weight: 500;
+      cursor: pointer;
+}
+
+.trade_value_container {
+      max-width: 100%;
+      border: 2px solid #d0000b;
+      border-radius: 6px;
+}
+
+.trade_value_container > div,
+.trade_container_form {
+      padding: 0 20px;
+}
+
+.trade_value_container img {
+      width: 10%;
+      max-width: 12%;
+      margin-left: -13px;
+}
+
+.redbook_logo {
+      display: flex;
+}
+
+.redbook_logo p:nth-of-type(1) {
+      padding-top: 8px;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #d0000b;
+      margin-bottom: 2px;
+      word-spacing: 1px;
+}
+
+.redbook_logo p:nth-of-type(2) {
+      display: block;
+      text-transform: none;
+      font-size: 0.9rem;
+      padding: 3px 0;
+      background-color: rgba(195, 188, 188, 0.604);
+}
+
+.redbook_car_info {
+      padding: 10px 0;
+      display: flex;
+}
+
+.redbook_car_info p {
+      font-weight: 600;
+      margin: 10px 0;
+}
+
+.redbook_car_info p:nth-of-type(2),
+p:nth-of-type(3) {
+      padding-left: 20px;
+      color: rgba(76, 75, 75, 0.913);
+}
+
+.redbook_car_info p:nth-of-type(1) {
+      text-decoration: 3.5px underline #d0000b;
+      text-underline-offset: 4px;
+}
+
+.trade_value_container form input {
+      width: 100%;
+      height: 40px;
+      margin-top: 10px;
+      margin-bottom: 12px;
+}
+
+.trade_value_container form input::placeholder {
+      font-size: 16px;
+      font-weight: 600;
+      color: rgba(154, 153, 153, 0.882);
+}
+
+.search_form_container {
+      width: 100%;
+      padding: 10px 25px;
+}
+
+.car_search_bar {
+      border: 1px solid rgba(107, 103, 103, 0.884);
+      border-radius: 5px;
+      height: 100%;
+      display: flex;
+      padding: 15px 20px;
+}
+
+.car_search_text_box {
+      border: none;
+      flex-grow: 2;
+      padding-left: 15px;
+}
+
+.search_car_button {
+      text-transform: none;
+      font-size: 11px;
+      font-weight: 700;
+      align-self: center;
+}
+
+.inventory_panel {
+      width: 100%;
+}
+
+.inventory_filter_panel {
+      display: none;
+}
+
+.car_listing_panels {
+      background-color: #f5f6f8;
+      border-top: 1px solid rgba(147, 147, 147, 0.641);
+      padding: 0 20px;
+}
+.car_listing_menu {
+      padding: 20px 0 40px;
+}
+
+.car_listing_title {
+      display: flex;
+      justify-content: space-between;
+}
+.car_listing_title > h2 {
+      font-weight: 700;
+}
+
+.fa-sliders,
+.fa-arrow-up-wide-short {
+      font-size: 15px;
+      color: #211f3b;
+      cursor: pointer;
+}
+
+.vehicle_cards {
+      width: 100%;
+}
+
+.car_photo {
+      width: 100%;
+}
+
+.vehicle_name {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 12px;
+}
+
+.vehicle_type {
+      text-decoration: underline;
+      font-weight: 300;
+      font-size: 13px;
+}
+.heart {
+      padding-right: 10px;
+      color: red;
+}
+
+.trim_model {
+      font-weight: 600;
+}
+
+.vehicle_identifiers {
+      display: flex;
+      font-size: 11px;
+      padding-top: 10px;
+      color: rgba(111, 110, 110, 0.83);
+}
+
+.stock_number,
+.model_number {
+      padding-left: 10px;
+}
+
+.padded {
+      padding-left: 8px;
+      padding-right: 8px;
+}
+
+.vehicle_features_icons {
+      margin-top: 1rem;
+      padding-top: 8px;
+}
+
+.features_icon_list {
+      display: flex;
+      justify-content: space-between;
+}
+
+.features_icon {
+      display: flex;
+}
+
+.exterior_color,
+.interior_color {
+      display: flex;
+      align-items: center;
+}
+
+.exterior_color {
+      margin-right: 8px;
+}
+
+.features_icon_list {
+      font-size: 12px;
+      text-align: center;
+}
+
+.features_icon_list li:first-of-type {
+      border: 1px solid rgba(0, 0, 0, 0.905);
+      padding: 1px 5px;
+      font-size: 0.7rem;
+      font-weight: 600;
+}
+
+.color:nth-of-type(1) {
+      background-color: #d0000b;
+}
+
+.color:nth-of-type(2) {
+      background-color: #f5f6f8;
+}
+
+.color {
+      border: 1px solid black;
+      display: inline-block;
+      width: 1rem;
+      height: 1rem;
+      /* background-color: red; */
+}
+
+.color_type {
+      font-size: 0.7rem;
+      padding-top: 2px;
+      padding-left: 5px;
+      text-transform: none;
+      font-weight: 500;
+}
+
+.extra_icons {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      margin-top: 15px;
+      border-top: 1px solid rgb(203, 198, 198);
+      border-bottom: 1px solid rgb(203, 198, 198);
+}
+
+.extra_icons ul {
+      display: flex;
+}
+
+.extra_icons ul:nth-of-type(1) li {
+      padding-right: 15px;
+      color: grey;
+      font-size: 1.1rem;
+}
+
+.extra_icons ul:nth-of-type(2) li {
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid black;
+      border-radius: 5px;
+      width: 1.6rem;
+      height: 1.6rem;
+}
+.extra_icons ul:nth-of-type(2) li:nth-of-type(1) {
+      margin-right: 5px;
+}
+
+.extra_icons ul:nth-of-type(2) li i {
+      color: black;
+      display: block;
+}
+
+/* CARD BOTTOM HALF************************************** */
+
+.car_bottom_half {
+}
+
+.pricingSavings_heading {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+      padding-top: 15px;
+}
+
+.savings_heading {
+      color: #006dc7;
+}
+
+.savings {
+      font-weight: 700;
+      font-size: 1.1rem;
+}
+
+.savings_text,
+.price_text {
+      display: block;
+      margin-top: 7px;
+      font-size: 0.8rem;
+      font-weight: 700;
+}
+
+.price {
+      font-size: 1.3rem;
+      font-weight: 800;
+}
+
+.price_text {
+      margin-left: 10px;
+}
+
+/* PRICE TRACK BUTTON***********************************  */
+
+.price_track {
+      padding-top: 15px;
+      /* display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; */
+}
+
+.price_track_heading {
+      border:;
+}
